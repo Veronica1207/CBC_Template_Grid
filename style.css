@@ -76,7 +76,7 @@ footer p {
 
 #covid-menu li {
     display: block;
-    padding-left: 30px;
+    padding-left: 10px;
     margin-top: 3px;
 }
 
@@ -86,26 +86,26 @@ footer p {
 
 #covid-menu #more-button {
     display:block;
-    margin-right: 50px;
+    margin-right: 30px;
     border: solid 1px black;
     padding: 7px 12px;
 }
 
 #cbc-header {
    display: block;
-   font-size: 1.3rem;
-   padding-right: 20px;
-   padding-left: 15px;
+   font-size: 1.1rem;
+   padding-right: 15px;
    margin-bottom: 5px;
+   margin-top: 0px;
 }
 
 #menu {
    display: block;
    border-left: solid 1px red;
-   padding-left: 20px; 
-   font-size: 1.3rem;
+   padding-left: 15px; 
+   font-size: 1.1rem;
    text-transform:uppercase;
-   margin-top: 18px;
+   margin-top: 0px;
    margin-bottom: 5px;
 }
 
@@ -146,6 +146,11 @@ footer p {
     border: solid 2px black;
 }
 
+#subscribe p {
+    display: block;
+    height: 300px;
+}
+
 #cbc-news {
     display:flex;
     flex-wrap: wrap;
@@ -181,7 +186,7 @@ footer p {
     height: 220px;
 }
 
-@media (min-width:800px) {
+@media (min-width:600px) {
     
     h2 {
         font-size: .8rem;
@@ -220,7 +225,7 @@ footer p {
     .main-nav a {
         display: block;
         text-decoration: none;
-        padding: 13px 16px;
+        padding: 13px 35px 13px 0px;
         font-size: .9rem;
         font-weight: bolder;
         color: black;
@@ -229,10 +234,11 @@ footer p {
     .news-container {
         display: grid;
         grid-gap: 15px 15px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(30px, auto);
         grid-template-areas:
-        "news-article1 news-article2 news-article3 news-article4"
+        "news-article1 news-article2 news-article3 "
+        "news-article4 news-article4 news-article4"
     }
 
     .news-article1 {
@@ -264,14 +270,13 @@ footer p {
     #cbc-header {
     font-size: 1rem;
     padding-right: 10px;
-    padding-left: 15px;
+    padding-left: 0px;
     margin-bottom: 5px;
     }
 
     #menu {
     padding-left: 10px; 
     font-size: 1rem;
-    margin-top:14px;
     margin-bottom: 5px;
     }
 
@@ -280,22 +285,26 @@ footer p {
         height: 300px;
     }
 
-    #six-main-articles-container article {
+    #welcome-section article {
         margin: 0px;
         height: 280px;
     }
 
-    #six-main-articles-container {
+    #welcome-section {
         display: grid;
         grid-gap: 15px 15px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(30px, auto);
         grid-template-areas:
+            "main-article main-article main-article"
             "main-article1 main-article2 main-article3"
             "main-article4 main-article5 main-article6"
-            "aside-grid1 . ."
-            "subscribe . ."
+            "aside-grid1 aside-grid1 aside-grid1"
+            "subscribe subscribe subscribe"
+    }
 
+    #main-article {
+        grid-area: main-article;
     }
 
     #main-article1 {
@@ -324,16 +333,15 @@ footer p {
     }
 
     #follow {
-        width: 210px;
+        width: auto;
+        height: 100px;
     }
     
     #subscribe {
         margin: 0px;
         margin-top: 300px;
-        background-color: lightgray;
-        border: solid 2px black;
-        height: 240px;
-        width: 210px;
+        height: 200px;
+        width: auto;
     }
     
     #cbc-news h2 {
@@ -364,6 +372,7 @@ footer p {
         "more-article7 more-article8 more-article9"
         "more-article10 more-article11 more-article12"
         "more-article13 more-article14 more-article15"
+        "more-article16 more-article16 more-article16"
     }
 
     #more-article1 {
@@ -411,6 +420,13 @@ footer p {
     #more-article15 {
         grid-area: more-article15;
     }
+    #more-article16 {
+        grid-area: more-article16;
+    }
+
+    #more-from-cbc #more-article16 {
+        height: 140px;
+    }
 
     #more-from-cbc h2 {
         margin-top: 32px;
@@ -422,8 +438,71 @@ footer p {
     }
 } 
 
-@media (min-width:960px) {
+@media (min-width:910px) {
     
-    
+    #wrapper {
+        max-width:1200px;
+        min-height:100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .news-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+        "news-article1 news-article2 news-article3 news-article4"
+    }
+    
+    #more-articles {
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+        "more-article1 more-article2 more-article3 more-article4"
+        "more-article5 more-article6 more-article7 more-article8"
+        "more-article9 more-article10 more-article11 more-article12"
+        "more-article13 more-article14 more-article15 more-article16"
+    }
+
+    #more-from-cbc article,
+    #more-from-cbc #more-article16 {
+        height: 180px;
+    }
+
+    #welcome-section {
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: repeat(3, 1fr) .8fr;
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+            "main-article main-article main-article aside-grid1"
+            "main-article1 main-article2 main-article3 subscribe"
+            "main-article4 main-article5 main-article6 subscribe"
+    }
+
+    #welcome{
+        margin-bottom: 22px;
+    }
+
+    #follow {
+        height: 130px;
+    }
+    
+    #follow p {
+        padding-left: 10px;
+    }
+
+    #subscribe {
+        margin: 0px;
+        margin-top: 150px;
+        height: 250px;
+    }
+    
+    #subscribe p {
+        padding-left: 10px;
+    }
+
+    
 }
