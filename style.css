@@ -6,62 +6,20 @@ html{
     box-sizing: inherit;
  }
 
+body {
+    margin: 0px;
+}
+
 header {
     display: flex;
 } 
 
 h2 {
+    font-size: 2.1rem;
     display: block;
     padding: 70px 10px 10px 10px;
     text-transform: uppercase;
     border-bottom: solid 3px black;
-}
-
-.main-nav {
-    display: none;
-}
-
-#wrapper {
-    padding: 25px;
-}
-#covid-menu {
-   font-size: 3rem;
-   display: flex;
-   justify-content: space-between;
-}
-#covid-menu a{
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#covid-menu li {
-    display: block;
-    padding: 0px 40px;
-}
-#covid-menu #more-button {
-    padding-right: 140px;
-}
-
- #cbc-header {
-    display: block;
-    font-size: 3rem;
-    padding-right: 35px;
-    padding-left: 25px;
- }
- #menu {
-    display: block;
-    border-left: solid 2px red;
-    padding-left: 35px; 
-    font-size: 2.3rem;
-    text-transform:uppercase;
- }
- #menu a { 
-    text-decoration: none;
- }
-
-#welcome-section {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 article {
@@ -74,6 +32,74 @@ article {
     margin-bottom: 40px;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+}
+
+footer p {
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    margin: 50px 0px;
+    padding-left: 30px;
+}
+
+.main-nav {
+    display: none;
+}
+
+#wrapper {
+    padding: 30px;
+}
+
+#covid-menu {
+   font-size: 3rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+#covid-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#covid-menu li {
+    display: block;
+    padding: 0px 40px;
+}
+
+#covid-menu #more-button {
+    padding-right: 140px;
+}
+
+#cbc-header {
+   display: block;
+   font-size: 3rem;
+   padding-right: 35px;
+   padding-left: 25px;
+}
+
+#menu {
+   display: block;
+   border-left: solid 2px red;
+   padding-left: 35px; 
+   font-size: 2.3rem;
+   text-transform:uppercase;
+}
+
+#menu a { 
+   text-decoration: none;
+}
+
+#welcome-section {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 #main-article {
     margin-top: 80px;
     height: 1400px;
@@ -84,10 +110,12 @@ article {
     border: solid 2px black;
 
 }
+
 #follow h2 {
     padding: 10px 15px;
     font-size: 2rem;
 }
+
 #follow p {
     display: block;
     height: 150px;
@@ -106,5 +134,35 @@ article {
     font-size: 2rem;
 }
 
+#cbc-news {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
+#change-local {
+    display:flex;
+    justify-content: space-between;
+}
 
+#change-local h3{
+    display:block;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+#change-local p {
+    display:block;
+    font-size: 3rem;
+    padding-right: 130px;
+    margin-top: 30px;
+}
+
+#more-from-cbc article {
+    display: block;
+    height: 600px;
+}
+
+@media (min-width:800px) {
+
+} 
