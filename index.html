@@ -14,10 +14,10 @@
 	</head>
 	<body>		
 		<header>
-            <h1>Not CBC</h1> 
-            <p><a href="#">menu</a></p>
+            <h1 id="cbc-header">Not CBC</h1> 
+            <p id="menu"><a href="#">menu</a></p>
         </header>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a href="#">covid-19</a></li>
                 <li><a href="#">Local updates</a></li>
@@ -26,18 +26,18 @@
                 <li><a href="#">Vaccine tracker</a></li>
             </ul>
         </nav>
+        <nav id="covid-menu">
+            <li><a href="#">covid-19</a></li>
+            <li id="more-button">More</li>
+        </nav>
 		<div id="wrapper">			
 			<main>
-              <section id="welcome-section">
+              <section>
                   <h2>Welcome to Not CBC.CA</h2>
-                  <div>
+                <div id="welcome-section">
                   <article id="main-article">
                     <h3>Main Article</h3>
                   </article>
-                  <aside>
-                    <h2>Follow CBC</h2>
-                    <p>Social Media icons</p>
-                </aside>
                 <section>
                 <div id="six-main-articles">
                     <article>
@@ -59,11 +59,19 @@
                         <h3>Article 6</h3>
                     </article>
                 </div>
-                    <aside>
-                        <p>Subscribe for newsletters</p>
-                    </aside>
+                </div>
+                <aside>
+                    <section id="follow">
+                    <h2>Follow CBC</h2>
+                    <p>Social Media icons</p>
+                    </section>
+                </aside>    
+                <aside id="sub">
+                    <p>Subscribe for newsletters</p>
+                </aside>
+                
                 </section>  
-                </section>
+            </section>
                 
                   <section id="cbc-news">
                     <h2>Not CBC News</h2>
