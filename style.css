@@ -11,25 +11,26 @@ body {
 }
 
 header {
-    display: flex;
+    display: flex;  
+    border-bottom: solid 1px lightgray;
 } 
 
 h2 {
-    font-size: 2.1rem;
+    font-size: 1rem;
     display: block;
-    padding: 70px 10px 10px 10px;
+    padding: 20px 10px 5px 5px;
     text-transform: uppercase;
-    border-bottom: solid 3px black;
+    border-bottom: solid 1px black;
 }
 
 article {
     display: block;
-    font-size: 2rem;
-    height: 800px;
+    font-size: .9rem;
+    height: 380px;
     background-color: lightgray;
     border:solid 2px black;
-    padding: 25px;
-    margin-bottom: 40px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -40,11 +41,10 @@ footer {
 }
 
 footer p {
-    font-size: 3rem;
     color: white;
     font-weight: bolder;
-    margin: 50px 0px;
-    padding-left: 30px;
+    margin: 17px 0px;
+    padding-left: 15px;
 }
 
 .main-nav {
@@ -52,13 +52,21 @@ footer p {
 }
 
 #wrapper {
-    padding: 30px;
+    padding: 15px;
+    max-width: 1024px;
+    margin: auto;
 }
 
 #covid-menu {
-   font-size: 3rem;
-   display: flex;
-   justify-content: space-between;
+   font-size: 1rem;
+}
+
+#covid-menu ul {
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #covid-menu a{
@@ -68,26 +76,37 @@ footer p {
 
 #covid-menu li {
     display: block;
-    padding: 0px 40px;
+    padding-left: 30px;
+    margin-top: 3px;
+}
+
+#covid-menu #covid-text {
+    margin-top: 12px;
 }
 
 #covid-menu #more-button {
-    padding-right: 140px;
+    display:block;
+    margin-right: 50px;
+    border: solid 1px black;
+    padding: 7px 12px;
 }
 
 #cbc-header {
    display: block;
-   font-size: 3rem;
-   padding-right: 35px;
-   padding-left: 25px;
+   font-size: 1.3rem;
+   padding-right: 20px;
+   padding-left: 15px;
+   margin-bottom: 5px;
 }
 
 #menu {
    display: block;
-   border-left: solid 2px red;
-   padding-left: 35px; 
-   font-size: 2.3rem;
+   border-left: solid 1px red;
+   padding-left: 20px; 
+   font-size: 1.3rem;
    text-transform:uppercase;
+   margin-top: 18px;
+   margin-bottom: 5px;
 }
 
 #menu a { 
@@ -101,8 +120,8 @@ footer p {
 }
 
 #main-article {
-    margin-top: 80px;
-    height: 1400px;
+    margin-top: 20px;
+    height: 500px;
 }
 
 #follow {
@@ -113,25 +132,23 @@ footer p {
 
 #follow h2 {
     padding: 10px 15px;
-    font-size: 2rem;
+    margin: 0px;
 }
 
 #follow p {
     display: block;
-    height: 150px;
-    font-size: 1.5rem;
+    height: 30px;
 }
 
 #sub {
-    margin: 300px 0px 300px 0px;
+    margin: 300px 0px;
     background-color: lightgray;
     border: solid 2px black;
 }
 
 #sub p{
     display: block;
-    height: 500px;
-    font-size: 2rem;
+    height: 330px;
 }
 
 #cbc-news {
@@ -147,22 +164,94 @@ footer p {
 
 #change-local h3{
     display:block;
-    font-size: 3rem;
-    margin-top: 30px;
+    margin: 0px;
+    margin-top: 5px;
 }
 
 #change-local p {
     display:block;
-    font-size: 3rem;
-    padding-right: 130px;
-    margin-top: 30px;
+    font-size: 1rem;
+    padding: 7px;
+    border: solid 1px black;
+    margin: 0px;
+    margin-right: 25px;
+}
+
+#my-local article{
+    margin-top: 15px;
 }
 
 #more-from-cbc article {
     display: block;
-    height: 600px;
+    height: 220px;
 }
 
 @media (min-width:800px) {
+    
+    h2 {
+        font-size: .8rem;
+        border-bottom-width: 1px;
+        padding-top: 16px;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    
+    header {
+        border-bottom: solid 1px lightgray;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer p {
+        font-size: .7rem;
+        padding: 16px;
+        margin: 0px;
+    }
+
+    .main-nav {
+        display: block;
+    }
+    .main-nav ul{
+        list-style:none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+
+    .main-nav a {
+        display: block;
+        text-decoration: none;
+        padding: 13px 16px;
+        font-size: .9rem;
+        font-weight: bolder;
+        color: black;
+    }
+
+    #wrapper {
+        padding: 15px;
+    }
+
+    #covid-menu {
+    display: none;
+    }
+
+    #cbc-header {
+    font-size: 1rem;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    }
+
+    #menu {
+    padding-left: 10px; 
+    font-size: 1rem;
+    margin-top:14px;
+    margin-bottom: 5px;
+    }
+
+    
 
 } 
