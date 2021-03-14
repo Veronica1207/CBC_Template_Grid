@@ -140,15 +140,10 @@ footer p {
     height: 30px;
 }
 
-#sub {
+#subscribe {
     margin: 300px 0px;
     background-color: lightgray;
     border: solid 2px black;
-}
-
-#sub p{
-    display: block;
-    height: 330px;
 }
 
 #cbc-news {
@@ -203,6 +198,7 @@ footer p {
     footer {
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     footer p {
@@ -230,6 +226,33 @@ footer p {
         color: black;
     }
 
+    .news-container {
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+        "news-article1 news-article2 news-article3 news-article4"
+    }
+
+    .news-article1 {
+        grid-area: news-article1;
+    }
+    .news-article2 {
+        grid-area: news-article2;
+    }
+    .news-article3 {
+        grid-area: news-article3;
+    }
+    .news-article4 {
+        grid-area: news-article4;
+    }
+
+    .news-container article {
+        height: 300px;
+        margin: 0px;
+    }
+
     #wrapper {
         padding: 15px;
     }
@@ -252,6 +275,155 @@ footer p {
     margin-bottom: 5px;
     }
 
+    #main-article{
+        margin-top: 15px;
+        height: 300px;
+    }
+
+    #six-main-articles-container article {
+        margin: 0px;
+        height: 280px;
+    }
+
+    #six-main-articles-container {
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+            "main-article1 main-article2 main-article3"
+            "main-article4 main-article5 main-article6"
+            "aside-grid1 . ."
+            "subscribe . ."
+
+    }
+
+    #main-article1 {
+        grid-area: main-article1;
+    }
+    #main-article2 {
+        grid-area: main-article2;
+    }
+    #main-article3 {
+        grid-area: main-article3;
+    }
+    #main-article4 {
+        grid-area: main-article4;
+    }
+    #main-article5 {
+        grid-area: main-article5;
+    }
+    #main-article6 {
+        grid-area: main-article6;
+    }
+    #aside-grid1 {
+        grid-area: aside-grid1;
+    }
+    #subscribe {
+        grid-area: subscribe;
+    }
+
+    #follow {
+        width: 210px;
+    }
+    
+    #subscribe {
+        margin: 0px;
+        margin-top: 300px;
+        background-color: lightgray;
+        border: solid 2px black;
+        height: 240px;
+        width: 210px;
+    }
+    
+    #cbc-news h2 {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+
+    #change-local {
+        justify-content:start;
+    }
+
+    #change-local p {
+        margin-left: 20px;
+    }
+
+    #my-local h2 {
+        margin-top: 32px;
+    }
+
+    #more-articles {
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(30px, auto);
+        grid-template-areas:
+        "more-article1 more-article2 more-article3"
+        "more-article4 more-article5 more-article6"
+        "more-article7 more-article8 more-article9"
+        "more-article10 more-article11 more-article12"
+        "more-article13 more-article14 more-article15"
+    }
+
+    #more-article1 {
+        grid-area: more-article1;
+    }
+    #more-article2 {
+        grid-area: more-article2;
+    }
+    #more-article3 {
+        grid-area: more-article3;
+    }
+    #more-article4 {
+        grid-area: more-article4;
+    }
+    #more-article5 {
+        grid-area: more-article5;
+    }
+    #more-article6 {
+        grid-area: more-article6;
+    }
+    #more-article7 {
+        grid-area: more-article7;
+    }
+    #more-article8 {
+        grid-area: more-article8;
+    }
+    #more-article9 {
+        grid-area: more-article9;
+    }
+    #more-article10 {
+        grid-area: more-article10;
+    }
+    #more-article11 {
+        grid-area: more-article11;
+    }
+    #more-article12 {
+        grid-area: more-article12;
+    }
+    #more-article13 {
+        grid-area: more-article13;
+    }
+    #more-article14 {
+        grid-area: more-article14;
+    }
+    #more-article15 {
+        grid-area: more-article15;
+    }
+
+    #more-from-cbc h2 {
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+
+    #more-from-cbc article {
+        margin: 0px;
+    }
+} 
+
+@media (min-width:960px) {
+    
     
 
-} 
+}
